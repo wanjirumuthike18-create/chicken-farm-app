@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egg Logs</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-container">
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+    <h1>🥚 Egg Logs</h1>
+
+    <form id="egg-form">
+      <label for="date">Date</label>
+      <input type="date" id="date" required />
+
+      <label for="egg-count">Eggs Collected</label>
+      <input type="number" id="egg-count" min="0" required />
+
+      <label for="broken-count">Broken Eggs</label>
+      <input type="number" id="broken-count" min="0" value="0" />
+
+      <label for="notes">Notes (optional)</label>
+      <input type="text" id="notes" placeholder="e.g. rainy day, low feed" />
+
+      <button type="submit">Add Log</button>
+    </form>
+
+    <p id="error-msg" class="error"></p>
+
+    <h2>Recent Logs</h2>
+    <div id="logs-list">Loading...</div>
+  </div>
+
+  <script type="module" src="js/eggLog.js"></script>
+</body>
+</html>

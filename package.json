@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wanjirumuthike18-create/chicken-farm-app#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^2.111.0"
+    "@supabase/supabase-js": "^2.111.0",
+    "dotenv": "^17.4.2"
   }
 }
